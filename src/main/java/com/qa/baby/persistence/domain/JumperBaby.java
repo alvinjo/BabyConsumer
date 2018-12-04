@@ -1,6 +1,5 @@
 package com.qa.baby.persistence.domain;
 
-
 public class JumperBaby {
 
     private Long babyId;

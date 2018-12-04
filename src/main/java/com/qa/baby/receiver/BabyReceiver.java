@@ -14,8 +14,13 @@ public class BabyReceiver {
 
     @JmsListener(destination = "BabyQueue", containerFactory = "myFactory")
     public void receiveMessage(JumperBaby baby){
-//        System.out.println(baby.toString());
-        repo.save(baby);
+        System.out.println(repo.save(baby));
+    }
+
+    @JmsListener(destination = "BabyQueueDelete", containerFactory = "myFactory")
+    public void receiveDelete(JumperBaby baby){
+        System.out.println(baby);
+        repo.deleteById(baby.getId());
     }
 
 }
