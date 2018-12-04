@@ -1,15 +1,15 @@
-package com.qa.BabyConsumer.persistence.domain;
+package com.qa.baby.persistence.domain;
 
 
-public class Baby {
+public class JumperBaby {
 
-    private Long id;
+    private Long babyId;
 
     private String name;
 
     private int lifespan;
 
-    public Baby(){
+    public JumperBaby(){
 
     }
 
@@ -21,19 +21,19 @@ public class Baby {
         this.lifespan = lifespan;
     }
 
-    public Baby(Long id, String name, int lifespan){
-        this.id = id;
+    public JumperBaby(Long babyId, String name, int lifespan){
+        this.babyId = babyId;
         this.name = name;
         this.lifespan = lifespan;
 
     }
 
     public Long getId() {
-        return id;
+        return babyId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long babyId) {
+        this.babyId = babyId;
     }
 
     public String getName() {

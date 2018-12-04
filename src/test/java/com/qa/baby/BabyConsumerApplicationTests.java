@@ -1,4 +1,4 @@
-package com.qa.BabyConsumer;
+package com.qa.baby;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
