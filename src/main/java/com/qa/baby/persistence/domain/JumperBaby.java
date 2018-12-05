@@ -45,6 +45,6 @@ public class JumperBaby {
 
     @Override
     public String toString(){
-        return "ID: "+ babyId + ", Name: " + name + ", Lifespan: " + lifespan;
+        return "{\"babyId\":\"" + babyId + "\", \"name\":\"" + "\", \"lifespan\":\"" + lifespan + "\"}";
     }
 }
